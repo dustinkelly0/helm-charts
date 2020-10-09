@@ -3,7 +3,7 @@ entries:
   customer360:
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2020-10-09T13:32:23.627036-05:00"
+    created: "2020-10-09T14:14:24.557392-05:00"
     dependencies:
     - name: pingdirectory
       repository: '@pingidentity-solutions'
@@ -28,11 +28,11 @@ entries:
     name: customer360
     type: application
     urls:
-    - https://helm.pingidentity.com/customer360-0.2.6.tgz
+    - https://helm.pingidentity.com/solutions/customer360-0.2.6.tgz
     version: 0.2.6
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2020-10-09T13:32:23.623714-05:00"
+    created: "2020-10-09T14:14:24.552139-05:00"
     dependencies:
     - name: pingdirectory
       repository: '@pingidentity-solutions'
@@ -57,11 +57,11 @@ entries:
     name: customer360
     type: application
     urls:
-    - https://helm.pingidentity.com/customer360-0.2.5.tgz
+    - https://helm.pingidentity.com/solutions/customer360-0.2.5.tgz
     version: 0.2.5
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2020-10-09T13:32:23.619501-05:00"
+    created: "2020-10-09T14:14:24.548623-05:00"
     dependencies:
     - name: pingdirectory
       repository: '@pingidentity-solutions'
@@ -86,11 +86,11 @@ entries:
     name: customer360
     type: application
     urls:
-    - https://helm.pingidentity.com/customer360-0.2.4.tgz
+    - https://helm.pingidentity.com/solutions/customer360-0.2.4.tgz
     version: 0.2.4
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2020-10-09T13:32:23.61623-05:00"
+    created: "2020-10-09T14:14:24.544557-05:00"
     dependencies:
     - name: pingdirectory
       repository: '@pingidentity-solutions'
@@ -115,11 +115,11 @@ entries:
     name: customer360
     type: application
     urls:
-    - https://helm.pingidentity.com/customer360-0.2.3.tgz
+    - https://helm.pingidentity.com/solutions/customer360-0.2.3.tgz
     version: 0.2.3
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2020-10-09T13:32:23.612972-05:00"
+    created: "2020-10-09T14:14:24.540885-05:00"
     dependencies:
     - name: pingdirectory
       repository: '@pingidentity-solutions'
@@ -144,11 +144,11 @@ entries:
     name: customer360
     type: application
     urls:
-    - https://helm.pingidentity.com/customer360-0.2.2.tgz
+    - https://helm.pingidentity.com/solutions/customer360-0.2.2.tgz
     version: 0.2.2
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2020-10-09T13:32:23.607431-05:00"
+    created: "2020-10-09T14:14:24.533649-05:00"
     dependencies:
     - name: pingdirectory
       repository: '@pingidentity-solutions'
@@ -173,6 +173,6 @@ entries:
     name: customer360
     type: application
     urls:
-    - https://helm.pingidentity.com/customer360-0.2.0.tgz
+    - https://helm.pingidentity.com/solutions/customer360-0.2.0.tgz
     version: 0.2.0
-generated: "2020-10-09T13:32:23.599583-05:00"
+generated: "2020-10-09T14:14:24.52707-05:00"
