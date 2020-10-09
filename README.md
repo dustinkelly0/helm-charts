@@ -4,11 +4,10 @@ This side provides PingIdnetity Helm Chart Repositories
 
 These helm repositories are intended to be a good starting point and can be used and altered as required.
 
-
 ## Charts
 
 | Chart Repository | Description |
-|--|--|--|
+|--|--|
 | [devops](devops) | Basic installation of Ping Identity Products |
 | [demos](demos) | Demonstration use cases using Ping Identity Products |
 | [solutions](solutions) | Fully built solutions using Ping Identity Products |
