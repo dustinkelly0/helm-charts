@@ -3,7 +3,36 @@ entries:
   customer360:
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2020-10-09T14:14:24.557392-05:00"
+    created: "2020-10-14T13:56:04.531484-07:00"
+    dependencies:
+    - name: pingdirectory
+      repository: https://helm.pingidentity.com/devops
+      version: ~0.0.5
+    - name: pingdatasync
+      repository: https://helm.pingidentity.com/devops
+      version: ~0.0.1
+    - name: pingfederate
+      repository: https://helm.pingidentity.com/devops
+      version: ~0.0.1
+    - name: pingaccess
+      repository: https://helm.pingidentity.com/devops
+      version: ~0.0.5
+    - name: pingcentral
+      repository: https://helm.pingidentity.com/devops
+      version: ~0.0.7
+    - name: pingdataconsole
+      repository: https://helm.pingidentity.com/devops
+      version: ~0.1.0
+    description: A Helm chart to deploy Ping Customer360 into a Kubernetes cluster
+    digest: 93ff792994b97d79e6b07af354ad3adb454833afb890977df100d62aa7ed9929
+    name: customer360
+    type: application
+    urls:
+    - customer360-0.2.7.tgz
+    version: 0.2.7
+  - apiVersion: v2
+    appVersion: 2.1.0
+    created: "2020-10-14T13:56:04.525956-07:00"
     dependencies:
     - name: pingdirectory
       repository: '@pingidentity-solutions'
@@ -28,11 +57,11 @@ entries:
     name: customer360
     type: application
     urls:
-    - https://helm.pingidentity.com/solutions/customer360-0.2.6.tgz
+    - customer360-0.2.6.tgz
     version: 0.2.6
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2020-10-09T14:14:24.552139-05:00"
+    created: "2020-10-14T13:56:04.520758-07:00"
     dependencies:
     - name: pingdirectory
       repository: '@pingidentity-solutions'
@@ -57,11 +86,11 @@ entries:
     name: customer360
     type: application
     urls:
-    - https://helm.pingidentity.com/solutions/customer360-0.2.5.tgz
+    - customer360-0.2.5.tgz
     version: 0.2.5
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2020-10-09T14:14:24.548623-05:00"
+    created: "2020-10-14T13:56:04.515262-07:00"
     dependencies:
     - name: pingdirectory
       repository: '@pingidentity-solutions'
@@ -86,11 +115,11 @@ entries:
     name: customer360
     type: application
     urls:
-    - https://helm.pingidentity.com/solutions/customer360-0.2.4.tgz
+    - customer360-0.2.4.tgz
     version: 0.2.4
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2020-10-09T14:14:24.544557-05:00"
+    created: "2020-10-14T13:56:04.509152-07:00"
     dependencies:
     - name: pingdirectory
       repository: '@pingidentity-solutions'
@@ -115,11 +144,11 @@ entries:
     name: customer360
     type: application
     urls:
-    - https://helm.pingidentity.com/solutions/customer360-0.2.3.tgz
+    - customer360-0.2.3.tgz
     version: 0.2.3
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2020-10-09T14:14:24.540885-05:00"
+    created: "2020-10-14T13:56:04.504985-07:00"
     dependencies:
     - name: pingdirectory
       repository: '@pingidentity-solutions'
@@ -144,35 +173,6 @@ entries:
     name: customer360
     type: application
     urls:
-    - https://helm.pingidentity.com/solutions/customer360-0.2.2.tgz
+    - customer360-0.2.2.tgz
     version: 0.2.2
-  - apiVersion: v2
-    appVersion: 2.1.0
-    created: "2020-10-09T14:14:24.533649-05:00"
-    dependencies:
-    - name: pingdirectory
-      repository: '@pingidentity-solutions'
-      version: ~0.0.5
-    - name: pingdatasync
-      repository: '@pingidentity-solutions'
-      version: ~0.0.1
-    - name: pingfederate
-      repository: '@pingidentity-solutions'
-      version: ~0.0.1
-    - name: pingaccess
-      repository: '@pingidentity-solutions'
-      version: ~0.0.5
-    - name: pingcentral
-      repository: '@pingidentity-solutions'
-      version: ~0.0.7
-    - name: pingdataconsole
-      repository: '@pingidentity-solutions'
-      version: ~0.1.0
-    description: A Helm chart to deploy Ping Customer360 into a Kubernetes cluster
-    digest: 4d35a32934424b79647d6e12b110520a6dde92dbbb6e4a90ab54fa5c87b98ea5
-    name: customer360
-    type: application
-    urls:
-    - https://helm.pingidentity.com/solutions/customer360-0.2.0.tgz
-    version: 0.2.0
-generated: "2020-10-09T14:14:24.52707-05:00"
+generated: "2020-10-14T13:56:04.495332-07:00"
