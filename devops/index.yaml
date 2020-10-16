@@ -3,13 +3,13 @@ entries:
   pingaccess:
   - apiVersion: v2
     appVersion: 6.1.0
-    created: "2020-10-16T07:50:21.795137-05:00"
+    created: "2020-10-16T07:59:25.861555-05:00"
     dependencies:
     - name: pingdevops
       repository: https://helm.pingidentity.com/devops
       version: 0.1.0
     description: A Sample PingAccess Helm chart
-    digest: 0a0736dcdfdb0c7902d50469f32fa3e2e8acc7b4a6b5ef14e358e1497f34f3a4
+    digest: 1a5a233da2231182238a8a89bc272fb8a79c2b4e36acc1d9918c884956e7b3d1
     home: https://devops.pingidentity.com/
     name: pingaccess
     sources:
@@ -22,7 +22,7 @@ entries:
     version: 0.1.0
   - apiVersion: v1
     appVersion: 6.1.0
-    created: "2020-10-16T07:50:21.791656-05:00"
+    created: "2020-10-16T07:59:25.860625-05:00"
     description: A Sample PingAccess Helm chart
     digest: 8b650ce9c728cf778914d2c8cb139caaa6d28ec44a8217ed3df8b9babfda5642
     home: https://www.pingidentity.com/
@@ -36,7 +36,7 @@ entries:
     version: 0.0.6
   - apiVersion: v1
     appVersion: 6.1.0
-    created: "2020-10-16T07:50:21.785093-05:00"
+    created: "2020-10-16T07:59:25.860094-05:00"
     description: A Sample PingAccess Helm chart
     digest: 7fd4d7051b374fbe14b6556b52bb491838585effa8e518a8a6bb0fb7ffa76d0e
     home: https://www.pingidentity.com/
@@ -51,13 +51,13 @@ entries:
   pingcentral:
   - apiVersion: v2
     appVersion: "1.5"
-    created: "2020-10-16T07:50:21.801709-05:00"
+    created: "2020-10-16T07:59:25.863675-05:00"
     dependencies:
     - name: pingdevops
       repository: https://helm.pingidentity.com/devops
       version: 0.1.0
     description: A Sample PingCentral Helm chart
-    digest: d8b2f91a08784de0af97d2d3a443c24d535d88dbc12773c8de84f06fdcd91b24
+    digest: 5844837ea3040a772c95e49f0657db6471b9e3119434641c99626858ebb22a1c
     home: https://devops.pingidentity.com/
     name: pingcentral
     sources:
@@ -70,7 +70,7 @@ entries:
     version: 0.1.0
   - apiVersion: v1
     appVersion: "1.5"
-    created: "2020-10-16T07:50:21.799228-05:00"
+    created: "2020-10-16T07:59:25.862808-05:00"
     description: A Sample PingCentral Helm chart - based on pingidentity-pc chart
     digest: b50a6b19705ac0c7d47fbee36965efa748eb78a55df62066325b136076c16699
     home: https://www.pingidentity.com/
@@ -84,7 +84,7 @@ entries:
     version: 0.0.19
   - apiVersion: v1
     appVersion: "1.5"
-    created: "2020-10-16T07:50:21.797382-05:00"
+    created: "2020-10-16T07:59:25.862185-05:00"
     description: A Sample PingCentral Helm chart - based on pingidentity-pc chart
     digest: 152fc218371d853ce5955265f0fea61765d48970484caef72ed04972d8bd7d8e
     home: https://www.pingidentity.com/
@@ -99,13 +99,13 @@ entries:
   pingdataconsole:
   - apiVersion: v2
     appVersion: 8.1.0
-    created: "2020-10-16T07:50:21.804459-05:00"
+    created: "2020-10-16T07:59:25.864483-05:00"
     dependencies:
     - name: pingdevops
       repository: https://helm.pingidentity.com/devops
       version: 0.1.0
     description: A Standalone PingDataConsole Helm chart
-    digest: 9024986f6a13a950c75fc0189329579ad281c95110446a1ee229dbdd1a2d38b6
+    digest: 1bb721564802745549ee981d724d46df8a6dc16529a882e267a389e63dbabe18
     home: https://devops.pingidentity.com/
     name: pingdataconsole
     sources:
@@ -119,13 +119,13 @@ entries:
   pingdatagovernance:
   - apiVersion: v2
     appVersion: 8.1.0
-    created: "2020-10-16T07:50:21.806601-05:00"
+    created: "2020-10-16T07:59:25.865297-05:00"
     dependencies:
     - name: pingdevops
       repository: https://helm.pingidentity.com/devops
       version: 0.1.0
     description: A Standalone PingDataGovernance Helm chart
-    digest: a96da8f456e61283193c77f083243c184684417c8b5ed6c93f83e85423600127
+    digest: 7185b9fbc1adee7b45cb9f91da97eb6027d3fb6ce33c16e7bf60e93aa0b530fd
     home: https://devops.pingidentity.com/
     name: pingdatagovernance
     sources:
@@ -138,14 +138,14 @@ entries:
     version: 0.1.0
   pingdatasync:
   - apiVersion: v2
-    appVersion: 8.1.0
-    created: "2020-10-16T07:50:21.81084-05:00"
+    appVersion: "8.1"
+    created: "2020-10-16T07:59:25.867372-05:00"
     dependencies:
     - name: pingdevops
       repository: https://helm.pingidentity.com/devops
       version: 0.1.0
     description: A Sample PingDataSync Helm chart
-    digest: 2d81c61e0caf4b51537fdf7f47cb4361a31856baa1adbc0c7060dd9482441e24
+    digest: d0c67c62fecbefb8e445c5b0ffb58244ae1addbdc5f040c86bb91a68c5362db2
     home: https://devops.pingidentity.com/
     name: pingdatasync
     sources:
@@ -158,7 +158,7 @@ entries:
     version: 0.1.0
   - apiVersion: v1
     appVersion: 8.1.0
-    created: "2020-10-16T07:50:21.808222-05:00"
+    created: "2020-10-16T07:59:25.865831-05:00"
     description: A Sample PingDataSync Helm chart - CPrice edits
     digest: bff337aaacb56464485ada991a36b9f8ed85e6e24251714fe13a6cd940033850
     home: https://www.pingidentity.com/
@@ -173,13 +173,13 @@ entries:
   pingdelegator:
   - apiVersion: v2
     appVersion: 4.2.0
-    created: "2020-10-16T07:50:21.818006-05:00"
+    created: "2020-10-16T07:59:25.868244-05:00"
     dependencies:
     - name: pingdevops
       repository: https://helm.pingidentity.com/devops
       version: 0.1.0
     description: A Sample PingDelegator Helm chart
-    digest: 332fb2979a33f100d4b1d2a034c4d2955a4f7ca9a89daecb27b46068d46f8a17
+    digest: 59cf49bf72ac08a41cca5fce611d334b0d7e6b3231e0b73011a75773d9552e63
     home: https://devops.pingidentity.com/
     name: pingdelegator
     sources:
@@ -193,9 +193,9 @@ entries:
   pingdevops:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2020-10-16T07:50:21.819506-05:00"
+    created: "2020-10-16T07:59:25.868936-05:00"
     description: Base Helm Chart for Ping DevOps
-    digest: c785305cc1db9f9eee4871b9ac0e6846438a1bc072d27849cd04a9ffe1e2f694
+    digest: ce87c239040deb2270841a820122bc2ff084f1788457f51acda6d1b23a29b345
     home: https://devops.pingidentity.com/
     name: pingdevops
     sources:
@@ -208,14 +208,14 @@ entries:
     version: 0.1.0
   pingdirectory:
   - apiVersion: v2
-    appVersion: 8.1.0.0
-    created: "2020-10-16T07:50:21.823568-05:00"
+    appVersion: "8.1"
+    created: "2020-10-16T07:59:25.870722-05:00"
     dependencies:
     - name: pingdevops
       repository: https://helm.pingidentity.com/devops
       version: 0.1.0
     description: A Sample PingDirectory Helm chart
-    digest: dc022ff86aca8c7e58624269aff9da16b7cb1c11408b98b86c2e7646aa83136c
+    digest: 01a7a2ef730364f001e9dd0b098346ae2ad44069ab1aa265f4a8a5a524e06de9
     home: https://devops.pingidentity.com/
     name: pingdirectory
     sources:
@@ -228,7 +228,7 @@ entries:
     version: 0.1.0
   - apiVersion: v1
     appVersion: 8.1.0
-    created: "2020-10-16T07:50:21.821432-05:00"
+    created: "2020-10-16T07:59:25.869884-05:00"
     description: A Sample PingDirectory Helm chart - CPrice edits
     digest: adbb7295f951cd47ba95442e438d5b33bb2383dc4db9ce01739706919e324293
     home: https://www.pingidentity.com/
@@ -243,13 +243,13 @@ entries:
   pingfederate:
   - apiVersion: v2
     appVersion: 10.1.0
-    created: "2020-10-16T07:50:21.826894-05:00"
+    created: "2020-10-16T07:59:25.872398-05:00"
     dependencies:
     - name: pingdevops
       repository: https://helm.pingidentity.com/devops
       version: 0.1.0
     description: A Sample PingFederate Helm chart with clustering
-    digest: 0d920db161e5f65f10028000488d14434165aa05896f1d7f129731905717d1d2
+    digest: 6c4265504456f8045fe88adacac98e29c215dc2c5c784c3612f1cd7da6cd7d96
     home: https://devops.pingidentity.com/
     name: pingfederate
     sources:
@@ -262,7 +262,7 @@ entries:
     version: 0.1.0
   - apiVersion: v1
     appVersion: 10.1.0
-    created: "2020-10-16T07:50:21.824994-05:00"
+    created: "2020-10-16T07:59:25.871427-05:00"
     description: A Sample PingFederate Helm chart with clustering - CPrice Edits
     digest: 5d90e47d7c13cfcc89d36af1bdcd7fab12a5e5c358d707e760cd238f89be7739
     home: https://www.pingidentity.com/
@@ -274,4 +274,4 @@ entries:
     urls:
     - https://helm.pingidentity.com/devops/pingfederate-0.0.4.tgz
     version: 0.0.4
-generated: "2020-10-16T07:50:21.775616-05:00"
+generated: "2020-10-16T07:59:25.859337-05:00"
