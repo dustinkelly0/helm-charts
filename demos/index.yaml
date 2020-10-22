@@ -3,7 +3,7 @@ entries:
   simplestack:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2020-10-22T08:14:54.072996-05:00"
+    created: "2020-10-22T17:14:37.719874-05:00"
     dependencies:
     - name: pingdirectory
       repository: file://../../devops/pingdirectory
@@ -21,11 +21,11 @@ entries:
       repository: file://../../devops/pingdataconsole
       version: 0.1.0
     description: A Helm chart to deploy PingFederate, PingDirectory
-    digest: 8a9025c0ed1a95f3c056e32e94ac21b80b8e8150b87043b714911787dbf557d1
+    digest: d337769351fb176453cf762475cbbe470a25f4ee9beba0ddb1131875dfdd0481
     home: https://devops.pingidentity.com/
     name: simplestack
     type: application
     urls:
     - https://helm.pingidentity.com/demos/simplestack-0.1.0.tgz
     version: 0.1.0
-generated: "2020-10-22T08:14:54.067635-05:00"
+generated: "2020-10-22T17:14:37.71497-05:00"
