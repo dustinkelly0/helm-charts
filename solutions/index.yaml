@@ -3,7 +3,33 @@ entries:
   customer360:
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2020-10-16T13:29:11.591274-07:00"
+    created: "2020-10-23T12:03:26.968013-07:00"
+    dependencies:
+    - name: pingdirectory
+      repository: https://helm.pingidentity.com/devops
+      version: ~0.1.0
+    - name: pingdatasync
+      repository: https://helm.pingidentity.com/devops
+      version: ~0.1.0
+    - name: pingfederate-admin
+      repository: https://helm.pingidentity.com/devops
+      version: ~0.1.0
+    - name: pingfederate-engine
+      repository: https://helm.pingidentity.com/devops
+      version: ~0.1.0
+    - name: pingdataconsole
+      repository: https://helm.pingidentity.com/devops
+      version: ~0.1.0
+    description: A Helm chart to deploy Ping Customer360 into a Kubernetes cluster
+    digest: da17398bd445dc790fc3d232f794f44932d407fff75d6f551a446555216098c4
+    name: customer360
+    type: application
+    urls:
+    - customer360-0.3.0-alpha.tgz
+    version: 0.3.0-alpha
+  - apiVersion: v2
+    appVersion: 2.1.0
+    created: "2020-10-23T12:03:26.960114-07:00"
     dependencies:
     - name: pingdirectory
       repository: https://helm.pingidentity.com/devops
@@ -32,7 +58,7 @@ entries:
     version: 0.2.7
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2020-10-16T13:29:11.583891-07:00"
+    created: "2020-10-23T12:03:26.954267-07:00"
     dependencies:
     - name: pingdirectory
       repository: '@pingidentity-solutions'
@@ -61,7 +87,7 @@ entries:
     version: 0.2.6
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2020-10-16T13:29:11.57665-07:00"
+    created: "2020-10-23T12:03:26.948561-07:00"
     dependencies:
     - name: pingdirectory
       repository: '@pingidentity-solutions'
@@ -90,7 +116,7 @@ entries:
     version: 0.2.5
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2020-10-16T13:29:11.570929-07:00"
+    created: "2020-10-23T12:03:26.943199-07:00"
     dependencies:
     - name: pingdirectory
       repository: '@pingidentity-solutions'
@@ -119,7 +145,7 @@ entries:
     version: 0.2.4
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2020-10-16T13:29:11.560004-07:00"
+    created: "2020-10-23T12:03:26.936848-07:00"
     dependencies:
     - name: pingdirectory
       repository: '@pingidentity-solutions'
@@ -148,7 +174,7 @@ entries:
     version: 0.2.3
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2020-10-16T13:29:11.554966-07:00"
+    created: "2020-10-23T12:03:26.930792-07:00"
     dependencies:
     - name: pingdirectory
       repository: '@pingidentity-solutions'
@@ -175,4 +201,4 @@ entries:
     urls:
     - customer360-0.2.2.tgz
     version: 0.2.2
-generated: "2020-10-16T13:29:11.543607-07:00"
+generated: "2020-10-23T12:03:26.923604-07:00"
