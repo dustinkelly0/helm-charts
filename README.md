@@ -1,6 +1,6 @@
 # Ping Identity Helm Chart Repositories
 
-This side provides PingIdnetity Helm Chart Repositories
+This site provides PingIdnetity Helm Chart Repositories
 
 These helm repositories are intended to be a good starting point and can be used and altered as required.
 
@@ -12,7 +12,7 @@ These helm repositories are intended to be a good starting point and can be used
 | [demos](demos) | Demonstration use cases using Ping Identity Products |
 | [solutions](solutions) | Fully built solutions using Ping Identity Products |
 
-## Add the Repository
+## Add the Repositories
 
 ```shell
 helm repo add ping-devops https://helm.pingidentity.com/devops
@@ -23,11 +23,12 @@ helm repo list
 ```
 
 ## Search for a Ping chart
+
 ```shell
 helm search repo ping
 ```
 
-## Remove the Repository
+## Remove the Repositories
 
 ```shell
 helm repo remove ping-devops
