@@ -3,37 +3,7 @@ entries:
   fullstack:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2020-11-03T13:10:17.281259-06:00"
-    dependencies:
-    - name: pingaccess
-      repository: file://../../devops/pingaccess
-      version: 0.1.1
-    - name: pingdataconsole
-      repository: file://../../devops/pingdataconsole
-      version: 0.1.1
-    - name: pingdirectory
-      repository: file://../../devops/pingdirectory
-      version: 0.1.1
-    - name: pingfederate-admin
-      repository: file://../../devops/pingfederate-admin
-      version: 0.1.1
-    - name: pingfederate-engine
-      repository: file://../../devops/pingfederate-engine
-      version: 0.1.1
-    - name: ldap-sdk-tools
-      repository: file://../../devops/ldap-sdk-tools
-      version: 0.1.1
-    description: Helm chart with all Ping DevOps Charts
-    digest: 03b8fb44637fb0d13a61b71b6e26f4dd6824b6a0dc1a2d8518b39eae627ba8f1
-    home: https://devops.pingidentity.com/
-    name: fullstack
-    type: application
-    urls:
-    - https://helm.pingidentity.com/demos/fullstack-0.1.1.tgz
-    version: 0.1.1
-  - apiVersion: v2
-    appVersion: "1.0"
-    created: "2020-11-03T13:10:17.274511-06:00"
+    created: "2020-11-03T13:55:48.305887-06:00"
     dependencies:
     - name: pingaccess
       repository: file://../../devops/pingaccess
@@ -61,4 +31,4 @@ entries:
     urls:
     - https://helm.pingidentity.com/demos/fullstack-0.1.0.tgz
     version: 0.1.0
-generated: "2020-11-03T13:10:17.265833-06:00"
+generated: "2020-11-03T13:55:48.286014-06:00"
