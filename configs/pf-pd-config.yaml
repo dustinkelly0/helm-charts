@@ -1,7 +1,7 @@
 ############################################################
 #- Ping Identity PingFederate/PingDirectory Demo
 #-
-#-  Host                 Port
+#-  Product/Chart                 Port
 #-  --------------------
 #-
 #-     console               login                console           rest    ldaps
@@ -39,7 +39,7 @@ global:
   #                    append: Appends the Release.Name
   #                   prepend: Prepends the Release.Name
   ############################################################
-  addReleaseNameToResource: prepend
+  addReleaseNameToResource: none
 
   ############################################################
   # Ingress
@@ -73,6 +73,13 @@ pingfederate-engine:
 #
 ############################################################
 pingdataconsole:
+  chartEnabled: true
+
+############################################################
+# PingDataGovernance
+#
+############################################################
+pingdatagovernance:
   chartEnabled: true
 
 ############################################################
