@@ -3,7 +3,7 @@ entries:
   customer360:
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2020-10-23T12:03:26.968013-07:00"
+    created: "2020-10-23T12:11:45.808173-07:00"
     dependencies:
     - name: pingdirectory
       repository: https://helm.pingidentity.com/devops
@@ -29,7 +29,7 @@ entries:
     version: 0.3.0-alpha
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2020-10-23T12:03:26.960114-07:00"
+    created: "2020-10-23T12:11:45.798468-07:00"
     dependencies:
     - name: pingdirectory
       repository: https://helm.pingidentity.com/devops
@@ -58,7 +58,7 @@ entries:
     version: 0.2.7
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2020-10-23T12:03:26.954267-07:00"
+    created: "2020-10-23T12:11:45.792125-07:00"
     dependencies:
     - name: pingdirectory
       repository: '@pingidentity-solutions'
@@ -87,7 +87,7 @@ entries:
     version: 0.2.6
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2020-10-23T12:03:26.948561-07:00"
+    created: "2020-10-23T12:11:45.786695-07:00"
     dependencies:
     - name: pingdirectory
       repository: '@pingidentity-solutions'
@@ -116,7 +116,7 @@ entries:
     version: 0.2.5
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2020-10-23T12:03:26.943199-07:00"
+    created: "2020-10-23T12:11:45.781418-07:00"
     dependencies:
     - name: pingdirectory
       repository: '@pingidentity-solutions'
@@ -145,7 +145,7 @@ entries:
     version: 0.2.4
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2020-10-23T12:03:26.936848-07:00"
+    created: "2020-10-23T12:11:45.775141-07:00"
     dependencies:
     - name: pingdirectory
       repository: '@pingidentity-solutions'
@@ -174,7 +174,7 @@ entries:
     version: 0.2.3
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2020-10-23T12:03:26.930792-07:00"
+    created: "2020-10-23T12:11:45.770633-07:00"
     dependencies:
     - name: pingdirectory
       repository: '@pingidentity-solutions'
@@ -201,4 +201,4 @@ entries:
     urls:
     - customer360-0.2.2.tgz
     version: 0.2.2
-generated: "2020-10-23T12:03:26.923604-07:00"
+generated: "2020-10-23T12:11:45.76398-07:00"
