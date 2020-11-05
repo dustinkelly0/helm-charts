@@ -8,8 +8,7 @@ These helm charts are intended to be a good starting point and can be used and a
 
 | Chart | Type | Capability | Status | Scalable |
 |--|--|--|--|--|
-| SimpleStack | Demo | SSO, Delegation & Directory | Available (Beta) | Yes |
-| FullStack | Demo | Access, SSO, Delegation, Data Governance & Directory | Available (Beta) | Yes |
+| FullStack | Demo | All Ping DevOps charts included | Available (Beta) | Yes |
 
 ## Add the Repository
 

@@ -1,0 +1,99 @@
+############################################################
+#- Ping Identity PingFederate/PingDirectory Demo
+#-
+#-  Product/Chart                 Port
+#-  --------------------
+#-
+#-     console               login                console           rest    ldaps
+#-     9999                  9031                 8443            1443    1636
+#-      |                     |                    |               |       |
+#-   +---------------+    +---------------+    +---------------+    +---------------+
+#-   | PingFederate  |    | PingFederate  |    |PingDataConsole|    | PingDirectory |
+#-   +---------------+    +---------------+    +---------------+    +---------------+
+#-
+#-  PingFederate Console                         PingDataConsole (PingDirectory)
+#-  --------------------                         -------------------------------
+#-  https://localhost:9999/pingfederate/app      https://localhost:8443
+#-    Username: administrator                        Server: pingdirectory
+#-    Password: 2FederateM0re                      Username: administrator
+#-                                                 Password: 2FederateM0re
+#-
+#-  PingDelegator App
+#-  -----------------
+#-  https://localhost:6443
+#-    Username: administrator
+#-    Password: 2FederateM0re
+#-
+#- NOTE: If you receive an error after pingdelegator login: 'You could not be authenticated'
+#-       some browsers (i.e. Firefox) may require you to accept cert on each port.
+#-       You should be able to goto https://localhost:1443 and accept the cert to continue.
+#-------------------------------------------------------------------------------------
+############################################################
+
+
+global:
+  ############################################################
+  #  addReleaseNameToResource: Provides global ability to add
+  #                            names to kubernetes resources
+  #      <not-set or any val>: No use of Release.Name ** DEFAULT **
+  #                    append: Appends the Release.Name
+  #                   prepend: Prepends the Release.Name
+  ############################################################
+  addReleaseNameToResource: none
+
+  ############################################################
+  # Ingress
+  #
+  #          ingress.enabled: {true | false}
+  # ingress.addReleaseToHost: {prepend | append | subdomain | none}
+  #    ingress.defaultDomain: Replaces with "_defaultDomain_" in host fields
+  # ingress.defaultTlsSecret: Replaces with "_defaultTlsSecret_" in tls.secretName
+  ############################################################
+  ingress:
+    addReleaseNameToHost: subdomain
+    enabled: true
+    defaultDomain: "ping-devops.com"
+
+############################################################
+# PingFederate Admin
+#
+############################################################
+pingfederate-admin:
+  chartEnabled: true
+
+############################################################
+# PingFederate Engine
+#
+############################################################
+pingfederate-engine:
+  chartEnabled: true
+
+############################################################
+# PingDataConsole
+#
+############################################################
+pingdataconsole:
+  chartEnabled: true
+
+############################################################
+# PingDataGovernance
+#
+############################################################
+pingdatagovernance:
+  chartEnabled: true
+
+############################################################
+# PingDirectory
+#
+############################################################
+pingdirectory:
+  chartEnabled: true
+  envs:
+    MAKELDIF_USERS: "20000"
+
+############################################################
+# ldap-sdk-tools
+#
+############################################################
+ldap-sdk-tools:
+  chartEnabled: true               # Enables ldap-sdk-tools Chart
