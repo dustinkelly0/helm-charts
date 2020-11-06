@@ -29,7 +29,7 @@ global:
 pingfederate-admin:
   chartEnabled: true
   envs:
-    SERVER_PROFILE_PATH=getting-started/pingfederate
+    SERVER_PROFILE_PATH: getting-started/pingfederate
 
 ############################################################
 # PingFederate Engine
@@ -38,4 +38,4 @@ pingfederate-admin:
 pingfederate-engine:
   chartEnabled: true
   envs:
-    SERVER_PROFILE_PATH=getting-started/pingfederate
+    SERVER_PROFILE_PATH: getting-started/pingfederate
