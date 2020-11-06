@@ -3,7 +3,21 @@ entries:
   customer360:
   - apiVersion: v2
     appVersion: 2.1.2
-    created: "2020-11-05T12:57:49.485094-08:00"
+    created: "2020-11-06T08:41:28.961371-08:00"
+    dependencies:
+    - name: devops
+      repository: https://helm.pingidentity.com/devops
+      version: ~0.1.0
+    description: A Helm chart to deploy Ping Customer360 into a Kubernetes cluster
+    digest: 19a67efa136d30840816843c4a2eadca2a44484dd95f801f6eaac6ff9c209ee6
+    name: customer360
+    type: application
+    urls:
+    - solutions/customer360-0.3.0-beta2.tgz
+    version: 0.3.0-beta2
+  - apiVersion: v2
+    appVersion: 2.1.2
+    created: "2020-11-06T08:41:28.940616-08:00"
     dependencies:
     - name: devops
       repository: https://helm.pingidentity.com/devops
@@ -17,33 +31,7 @@ entries:
     version: 0.3.0-beta
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2020-11-05T12:57:49.468074-08:00"
-    dependencies:
-    - name: pingdirectory
-      repository: https://helm.pingidentity.com/devops
-      version: ~0.1.0
-    - name: pingdatasync
-      repository: https://helm.pingidentity.com/devops
-      version: ~0.1.0
-    - name: pingfederate-admin
-      repository: https://helm.pingidentity.com/devops
-      version: ~0.1.0
-    - name: pingfederate-engine
-      repository: https://helm.pingidentity.com/devops
-      version: ~0.1.0
-    - name: pingdataconsole
-      repository: https://helm.pingidentity.com/devops
-      version: ~0.1.0
-    description: A Helm chart to deploy Ping Customer360 into a Kubernetes cluster
-    digest: da17398bd445dc790fc3d232f794f44932d407fff75d6f551a446555216098c4
-    name: customer360
-    type: application
-    urls:
-    - solutions/customer360-0.3.0-alpha.tgz
-    version: 0.3.0-alpha
-  - apiVersion: v2
-    appVersion: 2.1.0
-    created: "2020-11-05T12:57:49.456913-08:00"
+    created: "2020-11-06T08:41:28.922386-08:00"
     dependencies:
     - name: pingdirectory
       repository: https://helm.pingidentity.com/devops
@@ -70,161 +58,142 @@ entries:
     urls:
     - solutions/customer360-0.2.7.tgz
     version: 0.2.7
+  devops:
   - apiVersion: v2
-    appVersion: 2.1.0
-    created: "2020-11-05T12:57:49.444444-08:00"
+    appVersion: "1.0"
+    created: "2020-11-06T08:41:28.817619-08:00"
     dependencies:
-    - name: pingdirectory
-      repository: '@pingidentity-solutions'
-      version: ~0.0.5
-    - name: pingdatasync
-      repository: '@pingidentity-solutions'
-      version: ~0.0.1
-    - name: pingfederate
-      repository: '@pingidentity-solutions'
-      version: ~0.0.1
     - name: pingaccess
-      repository: '@pingidentity-solutions'
-      version: ~0.0.5
-    - name: pingcentral
-      repository: '@pingidentity-solutions'
-      version: ~0.0.7
+      repository: file://../pingaccess
+      version: 0.1.1
     - name: pingdataconsole
-      repository: '@pingidentity-solutions'
-      version: ~0.1.0
-    description: A Helm chart to deploy Ping Customer360 into a Kubernetes cluster
-    digest: dca62374119a71b07f955ea8e7d8e59f3810e1e2279008f8c89a60e331c0f14b
-    name: customer360
+      repository: file://../pingdataconsole
+      version: 0.1.1
+    - name: pingdatagovernance
+      repository: file://../pingdatagovernance
+      version: 0.1.1
+    - name: pingdelegator
+      repository: file://../pingdelegator
+      version: 0.1.1
+    - name: pingdirectory
+      repository: file://../pingdirectory
+      version: 0.1.1
+    - name: pingfederate-admin
+      repository: file://../pingfederate-admin
+      version: 0.1.1
+    - name: pingfederate-engine
+      repository: file://../pingfederate-engine
+      version: 0.1.1
+    - name: ldap-sdk-tools
+      repository: file://../ldap-sdk-tools
+      version: 0.1.1
+    description: Ping DevOps Chart
+    digest: 4eb83e71631f06ae211f55774da527660434cf6d80236049c4672184a12a38a4
+    home: https://devops.pingidentity.com/
+    name: devops
     type: application
     urls:
-    - solutions/customer360-0.2.6.tgz
-    version: 0.2.6
+    - devops/devops-0.1.1.tgz
+    version: 0.1.1
+  fullstack:
   - apiVersion: v2
-    appVersion: 2.1.0
-    created: "2020-11-05T12:57:49.427211-08:00"
+    appVersion: "1.0"
+    created: "2020-11-06T08:41:28.785811-08:00"
     dependencies:
-    - name: pingdirectory
-      repository: '@pingidentity-solutions'
-      version: ~0.0.5
-    - name: pingdatasync
-      repository: '@pingidentity-solutions'
-      version: ~0.0.1
-    - name: pingfederate
-      repository: '@pingidentity-solutions'
-      version: ~0.0.1
     - name: pingaccess
-      repository: '@pingidentity-solutions'
-      version: ~0.0.5
-    - name: pingcentral
-      repository: '@pingidentity-solutions'
-      version: ~0.0.7
+      repository: file://../../devops/pingaccess
+      version: 0.1.0
     - name: pingdataconsole
-      repository: '@pingidentity-solutions'
-      version: ~0.1.0
-    description: A Helm chart to deploy Ping Customer360 into a Kubernetes cluster
-    digest: 1a75be04630a7cf465e079740be41fb4e71dcc0f8ef4ead7adc1ad7aca2cb2ba
-    name: customer360
+      repository: file://../../devops/pingdataconsole
+      version: 0.1.0
+    - name: pingdirectory
+      repository: file://../../devops/pingdirectory
+      version: 0.1.0
+    - name: pingfederate-admin
+      repository: file://../../devops/pingfederate-admin
+      version: 0.1.0
+    - name: pingfederate-engine
+      repository: file://../../devops/pingfederate-engine
+      version: 0.1.0
+    - name: ldap-sdk-tools
+      repository: file://../../devops/ldap-sdk-tools
+      version: 0.1.0
+    description: Helm chart with all Ping DevOps Charts
+    digest: b342410acdcbac6646822071a2492841d62bd227a3ed195d9ca82cf1e0dc1587
+    home: https://devops.pingidentity.com/
+    name: fullstack
     type: application
     urls:
-    - solutions/customer360-0.2.5.tgz
-    version: 0.2.5
+    - demos/fullstack-0.1.0.tgz
+    version: 0.1.0
+  ldap-sdk-tools:
   - apiVersion: v2
-    appVersion: 2.1.0
-    created: "2020-11-05T12:57:49.413792-08:00"
+    appVersion: "5.1"
+    created: "2020-11-06T08:41:28.856473-08:00"
     dependencies:
-    - name: pingdirectory
-      repository: '@pingidentity-solutions'
-      version: ~0.0.5
-    - name: pingdatasync
-      repository: '@pingidentity-solutions'
-      version: ~0.0.1
-    - name: pingfederate
-      repository: '@pingidentity-solutions'
-      version: ~0.0.1
-    - name: pingaccess
-      repository: '@pingidentity-solutions'
-      version: ~0.0.5
-    - name: pingcentral
-      repository: '@pingidentity-solutions'
-      version: ~0.0.7
-    - name: pingdataconsole
-      repository: '@pingidentity-solutions'
-      version: ~0.1.0
-    description: A Helm chart to deploy Ping Customer360 into a Kubernetes cluster
-    digest: b8f7e9cb5c5ce92ff43709b45cdf4f778482426a951bdeff471ef9b5da51f187
-    name: customer360
+    - name: pinglib
+      repository: file://../../pinglib
+      version: 0.1.1
+    description: A Standalone ldap-sdk-tools Chart
+    digest: 2ca3f8a96ff76420127eba9563794a45ad5d1161ca94b8499f9f47a7107f0f4a
+    home: https://devops.pingidentity.com/
+    name: ldap-sdk-tools
+    sources:
+    - https://github.com/pingidentity/pingidentity-getting-started
+    - https://github.com/pingidentity/pingidentity-docker-builds
+    - https://github.com/pingidentity/pingidentity-server-profiles
     type: application
     urls:
-    - solutions/customer360-0.2.4.tgz
-    version: 0.2.4
+    - devops/ldap-sdk-tools-0.1.1.tgz
+    version: 0.1.1
   - apiVersion: v2
-    appVersion: 2.1.0
-    created: "2020-11-05T12:57:49.395144-08:00"
+    appVersion: "5.1"
+    created: "2020-11-06T08:41:28.843799-08:00"
     dependencies:
-    - name: pingdirectory
-      repository: '@pingidentity-solutions'
-      version: ~0.0.5
-    - name: pingdatasync
-      repository: '@pingidentity-solutions'
-      version: ~0.0.1
-    - name: pingfederate
-      repository: '@pingidentity-solutions'
-      version: ~0.0.1
-    - name: pingaccess
-      repository: '@pingidentity-solutions'
-      version: ~0.0.5
-    - name: pingcentral
-      repository: '@pingidentity-solutions'
-      version: ~0.0.7
-    - name: pingdataconsole
-      repository: '@pingidentity-solutions'
-      version: ~0.1.0
-    description: A Helm chart to deploy Ping Customer360 into a Kubernetes cluster
-    digest: 6d3bc0a46a7688e658dfc1025f5b2060cd86e4ff76147bd212fbe52b77d45611
-    name: customer360
+    - name: pingdevops
+      repository: file://../../pingdevops
+      version: 0.1.0
+    description: A Standalone ldap-sdk-tools Chart
+    digest: 19ea779c8dabcbecd753484610a1d3adcd2d2d77000fa1a1752f176a046831a0
+    home: https://devops.pingidentity.com/
+    name: ldap-sdk-tools
+    sources:
+    - https://github.com/pingidentity/pingidentity-getting-started
+    - https://github.com/pingidentity/pingidentity-docker-builds
+    - https://github.com/pingidentity/pingidentity-server-profiles
     type: application
     urls:
-    - solutions/customer360-0.2.3.tgz
-    version: 0.2.3
-  - apiVersion: v2
-    appVersion: 2.1.0
-    created: "2020-11-05T12:57:49.383909-08:00"
-    dependencies:
-    - name: pingdirectory
-      repository: '@pingidentity-solutions'
-      version: ~0.0.5
-    - name: pingdatasync
-      repository: '@pingidentity-solutions'
-      version: ~0.0.1
-    - name: pingfederate
-      repository: '@pingidentity-solutions'
-      version: ~0.0.1
-    - name: pingaccess
-      repository: '@pingidentity-solutions'
-      version: ~0.0.5
-    - name: pingcentral
-      repository: '@pingidentity-solutions'
-      version: ~0.0.7
-    - name: pingdataconsole
-      repository: '@pingidentity-solutions'
-      version: ~0.1.0
-    description: A Helm chart to deploy Ping Customer360 into a Kubernetes cluster
-    digest: 91f3a9acee913a99d7c90fc68e5647694064fa600ccf51279122667533bee092
-    name: customer360
-    type: application
-    urls:
-    - solutions/customer360-0.2.2.tgz
-    version: 0.2.2
+    - devops/ldap-sdk-tools-0.1.0.tgz
+    version: 0.1.0
   pingaccess:
   - apiVersion: v2
     appVersion: "6.1"
-    created: "2020-11-05T12:57:49.337974-08:00"
+    created: "2020-11-06T08:41:28.883489-08:00"
+    dependencies:
+    - name: pinglib
+      repository: file://../../pinglib
+      version: 0.1.1
+    description: A Sample PingAccess Helm chart
+    digest: e5a2dc70987f49401d7526a194d49d7cdeee586ae75109acbe848908ad971994
+    home: https://devops.pingidentity.com/
+    name: pingaccess
+    sources:
+    - https://github.com/pingidentity/pingidentity-getting-started
+    - https://github.com/pingidentity/pingidentity-docker-builds
+    - https://github.com/pingidentity/pingidentity-server-profiles
+    type: application
+    urls:
+    - devops/pingaccess-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: "6.1"
+    created: "2020-11-06T08:41:28.877744-08:00"
     dependencies:
     - name: pingdevops
       repository: file://../../pingdevops
       version: 0.1.0
     description: A Sample PingAccess Helm chart
-    digest: f2b1094920e0b4fff65b93faf06b79af676b71f97eaae93ab8b208f7bd268f77
+    digest: a89d5fc6e9216adbbf93730c29dc2dfdca1f2bd5f582a9c50f1b2a50957fc200
     home: https://devops.pingidentity.com/
     name: pingaccess
     sources:
@@ -235,73 +204,35 @@ entries:
     urls:
     - devops/pingaccess-0.1.0.tgz
     version: 0.1.0
-  - apiVersion: v1
-    appVersion: 6.1.0
-    created: "2020-11-05T12:57:49.334605-08:00"
-    description: A Sample PingAccess Helm chart
-    digest: 8b650ce9c728cf778914d2c8cb139caaa6d28ec44a8217ed3df8b9babfda5642
-    home: https://www.pingidentity.com/
-    name: pingaccess
-    sources:
-    - https://github.com/patrickcping/pingidentity-helm-charts
-    - https://github.com/pingidentity/pingidentity-docker-builds
-    - https://github.com/pingidentity/pingidentity-server-profiles
-    urls:
-    - devops/pingaccess-0.0.6.tgz
-    version: 0.0.6
-  - apiVersion: v1
-    appVersion: 6.1.0
-    created: "2020-11-05T12:57:49.317018-08:00"
-    description: A Sample PingAccess Helm chart
-    digest: 7fd4d7051b374fbe14b6556b52bb491838585effa8e518a8a6bb0fb7ffa76d0e
-    home: https://www.pingidentity.com/
-    name: pingaccess
-    sources:
-    - https://github.com/patrickcping/pingidentity-helm-charts
-    - https://github.com/pingidentity/pingidentity-docker-builds
-    - https://github.com/pingidentity/pingidentity-server-profiles
-    urls:
-    - devops/pingaccess-0.0.5.tgz
-    version: 0.0.5
-  pingcentral:
-  - apiVersion: v1
-    appVersion: "1.5"
-    created: "2020-11-05T12:57:49.363676-08:00"
-    description: A Sample PingCentral Helm chart - based on pingidentity-pc chart
-    digest: b50a6b19705ac0c7d47fbee36965efa748eb78a55df62066325b136076c16699
-    home: https://www.pingidentity.com/
-    name: pingcentral
-    sources:
-    - https://github.com/cprice-ping/pingidentity-helm-charts
-    - https://github.com/pingidentity/pingidentity-docker-builds
-    - https://github.com/pingidentity/pingidentity-server-profiles
-    urls:
-    - devops/pingcentral-0.0.19.tgz
-    version: 0.0.19
-  - apiVersion: v1
-    appVersion: "1.5"
-    created: "2020-11-05T12:57:49.357005-08:00"
-    description: A Sample PingCentral Helm chart - based on pingidentity-pc chart
-    digest: 152fc218371d853ce5955265f0fea61765d48970484caef72ed04972d8bd7d8e
-    home: https://www.pingidentity.com/
-    name: pingcentral
-    sources:
-    - https://github.com/cprice-ping/pingidentity-helm-charts
-    - https://github.com/pingidentity/pingidentity-docker-builds
-    - https://github.com/pingidentity/pingidentity-server-profiles
-    urls:
-    - devops/pingcentral-0.0.18.tgz
-    version: 0.0.18
   pingdataconsole:
   - apiVersion: v2
     appVersion: "8.1"
-    created: "2020-11-05T12:57:49.364806-08:00"
+    created: "2020-11-06T08:41:28.888461-08:00"
+    dependencies:
+    - name: pinglib
+      repository: file://../../pinglib
+      version: 0.1.1
+    description: A Standalone PingDataConsole Helm chart
+    digest: 7a13b32481e8085e3bfba4de8d730449db12101606f3e30429fa63571085b215
+    home: https://devops.pingidentity.com/
+    name: pingdataconsole
+    sources:
+    - https://github.com/pingidentity/pingidentity-getting-started
+    - https://github.com/pingidentity/pingidentity-docker-builds
+    - https://github.com/pingidentity/pingidentity-server-profiles
+    type: application
+    urls:
+    - devops/pingdataconsole-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: "8.1"
+    created: "2020-11-06T08:41:28.885851-08:00"
     dependencies:
     - name: pingdevops
       repository: file://../../pingdevops
       version: 0.1.0
     description: A Standalone PingDataConsole Helm chart
-    digest: 5a34e3ac5927e78fb74fe6be431e3717c87fdc0f3dcde41ea58b4f282581f9e5
+    digest: 803696cfe1f61997e431c29ac3d52dc202e205b17a92be78ee8d87f7b409957a
     home: https://devops.pingidentity.com/
     name: pingdataconsole
     sources:
@@ -312,16 +243,55 @@ entries:
     urls:
     - devops/pingdataconsole-0.1.0.tgz
     version: 0.1.0
+  pingdatagovernance:
+  - apiVersion: v2
+    appVersion: "8.1"
+    created: "2020-11-06T08:41:28.890749-08:00"
+    dependencies:
+    - name: pinglib
+      repository: file://../../pinglib
+      version: 0.1.1
+    description: A Standalone PingDataGovernance Helm chart
+    digest: ab2ac00b54463c815c77d13d14482c9106cb5b538a2a7c007364e0d4fdba1b9b
+    home: https://devops.pingidentity.com/
+    name: pingdatagovernance
+    sources:
+    - https://github.com/pingidentity/pingidentity-getting-started
+    - https://github.com/pingidentity/pingidentity-docker-builds
+    - https://github.com/pingidentity/pingidentity-server-profiles
+    type: application
+    urls:
+    - devops/pingdatagovernance-0.1.1.tgz
+    version: 0.1.1
   pingdatasync:
   - apiVersion: v2
     appVersion: "8.1"
-    created: "2020-11-05T12:57:49.3677-08:00"
+    created: "2020-11-06T08:41:28.895369-08:00"
+    dependencies:
+    - name: pinglib
+      repository: file://../../pinglib
+      version: 0.1.1
+    description: A Sample PingDataSync Helm chart
+    digest: d02930a40da3f67bddef3f89bb6068e80695fc14600cad509731231ff5c90c07
+    home: https://devops.pingidentity.com/
+    name: pingdatasync
+    sources:
+    - https://github.com/pingidentity/pingidentity-getting-started
+    - https://github.com/pingidentity/pingidentity-docker-builds
+    - https://github.com/pingidentity/pingidentity-server-profiles
+    type: application
+    urls:
+    - devops/pingdatasync-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: "8.1"
+    created: "2020-11-06T08:41:28.892986-08:00"
     dependencies:
     - name: pingdevops
       repository: file://../../pingdevops
       version: 0.1.0
     description: A Sample PingDataSync Helm chart
-    digest: 4576c9c25afa99dedf4d7ece1f20c8126598fc12622c6133f43283f2518f8787
+    digest: 0ba0b29091301b336016f2264ef3feeb8240ecb57f3d26af4c5441470cec8e71
     home: https://devops.pingidentity.com/
     name: pingdatasync
     sources:
@@ -332,30 +302,35 @@ entries:
     urls:
     - devops/pingdatasync-0.1.0.tgz
     version: 0.1.0
-  - apiVersion: v1
-    appVersion: 8.1.0
-    created: "2020-11-05T12:57:49.36662-08:00"
-    description: A Sample PingDataSync Helm chart - CPrice edits
-    digest: bff337aaacb56464485ada991a36b9f8ed85e6e24251714fe13a6cd940033850
-    home: https://www.pingidentity.com/
-    name: pingdatasync
-    sources:
-    - https://github.com/cprice-ping/pingidentity-helm-charts
-    - https://github.com/pingidentity/pingidentity-docker-builds
-    - https://github.com/pingidentity/pingidentity-server-profiles
-    urls:
-    - devops/pingdatasync-0.0.3.tgz
-    version: 0.0.3
   pingdelegator:
   - apiVersion: v2
     appVersion: "4.2"
-    created: "2020-11-05T12:57:49.368936-08:00"
+    created: "2020-11-06T08:41:28.90097-08:00"
+    dependencies:
+    - name: pinglib
+      repository: file://../../pinglib
+      version: 0.1.1
+    description: A Sample PingDelegator Helm chart
+    digest: 15ce5a7fe8c4e55c2a74047ecb697b2e331f3ce463bcc3df658125c842698993
+    home: https://devops.pingidentity.com/
+    name: pingdelegator
+    sources:
+    - https://github.com/pingidentity/pingidentity-getting-started
+    - https://github.com/pingidentity/pingidentity-docker-builds
+    - https://github.com/pingidentity/pingidentity-server-profiles
+    type: application
+    urls:
+    - devops/pingdelegator-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: "4.2"
+    created: "2020-11-06T08:41:28.897628-08:00"
     dependencies:
     - name: pingdevops
       repository: file://../../pingdevops
       version: 0.1.0
     description: A Sample PingDelegator Helm chart
-    digest: 370604ad9c4f127b542ebd28a1fbb585483d18aaf773b796c9c79c3ba2f7b912
+    digest: 257b2f5471995c95c5faefe7393e1f6abdccbb452da2a88567cfef250464c2a6
     home: https://devops.pingidentity.com/
     name: pingdelegator
     sources:
@@ -369,13 +344,32 @@ entries:
   pingdirectory:
   - apiVersion: v2
     appVersion: "8.1"
-    created: "2020-11-05T12:57:49.372131-08:00"
+    created: "2020-11-06T08:41:28.906575-08:00"
+    dependencies:
+    - name: pinglib
+      repository: file://../../pinglib
+      version: 0.1.1
+    description: A Sample PingDirectory Helm chart
+    digest: da865b79e1b88e54093dfc06ebdebdb4ba67fb61bf9b14b4058d368fd1c9b132
+    home: https://devops.pingidentity.com/
+    name: pingdirectory
+    sources:
+    - https://github.com/pingidentity/pingidentity-getting-started
+    - https://github.com/pingidentity/pingidentity-docker-builds
+    - https://github.com/pingidentity/pingidentity-server-profiles
+    type: application
+    urls:
+    - devops/pingdirectory-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: "8.1"
+    created: "2020-11-06T08:41:28.903756-08:00"
     dependencies:
     - name: pingdevops
       repository: file://../../pingdevops
       version: 0.1.0
     description: A Sample PingDirectory Helm chart
-    digest: b3d52706be8c0afeecef0f61217dc31c434f58c00248c4f7d65c7a232496f902
+    digest: 06b7df523bd5105df1119c3d3d84afe2e473759be0c76265cd7b94983c80e918
     home: https://devops.pingidentity.com/
     name: pingdirectory
     sources:
@@ -386,45 +380,35 @@ entries:
     urls:
     - devops/pingdirectory-0.1.0.tgz
     version: 0.1.0
-  - apiVersion: v1
-    appVersion: 8.1.0
-    created: "2020-11-05T12:57:49.370815-08:00"
-    description: A Sample PingDirectory Helm chart - CPrice edits
-    digest: adbb7295f951cd47ba95442e438d5b33bb2383dc4db9ce01739706919e324293
-    home: https://www.pingidentity.com/
-    name: pingdirectory
-    sources:
-    - https://github.com/cprice-ping/pingidentity-helm-charts
-    - https://github.com/pingidentity/pingidentity-docker-builds
-    - https://github.com/pingidentity/pingidentity-server-profiles
-    urls:
-    - devops/pingdirectory-0.0.9.tgz
-    version: 0.0.9
-  pingfederate:
-  - apiVersion: v1
-    appVersion: 10.1.0
-    created: "2020-11-05T12:57:49.374168-08:00"
-    description: A Sample PingFederate Helm chart with clustering - CPrice Edits
-    digest: 5d90e47d7c13cfcc89d36af1bdcd7fab12a5e5c358d707e760cd238f89be7739
-    home: https://www.pingidentity.com/
-    name: pingfederate
-    sources:
-    - https://github.com/cprice-ping/pingidentity-helm-charts
-    - https://github.com/pingidentity/pingidentity-docker-builds
-    - https://github.com/pingidentity/pingidentity-server-profiles
-    urls:
-    - devops/pingfederate-0.0.4.tgz
-    version: 0.0.4
   pingfederate-admin:
   - apiVersion: v2
     appVersion: "10.1"
-    created: "2020-11-05T12:57:49.375637-08:00"
+    created: "2020-11-06T08:41:28.91179-08:00"
+    dependencies:
+    - name: pinglib
+      repository: file://../../pinglib
+      version: 0.1.1
+    description: A Sample PingFederate Admin Helm chart with clustering
+    digest: 0851c46fc7999965d5e1f3fc3bb7ef425f35a8206b0b9e204316615808c565d3
+    home: https://devops.pingidentity.com/
+    name: pingfederate-admin
+    sources:
+    - https://github.com/pingidentity/pingidentity-getting-started
+    - https://github.com/pingidentity/pingidentity-docker-builds
+    - https://github.com/pingidentity/pingidentity-server-profiles
+    type: application
+    urls:
+    - devops/pingfederate-admin-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: "10.1"
+    created: "2020-11-06T08:41:28.909058-08:00"
     dependencies:
     - name: pingdevops
       repository: file://../../pingdevops
       version: 0.1.0
     description: A Sample PingFederate Admin Helm chart with clustering
-    digest: 8bb62094b4447c23d60c6b11bef5715b99cb3c0ba6bd013dbd1671e9e4c66421
+    digest: 600621d678435e58b2f5503bcd8b598da28384aba25151c6dfa407b96b8fc46e
     home: https://devops.pingidentity.com/
     name: pingfederate-admin
     sources:
@@ -438,13 +422,32 @@ entries:
   pingfederate-engine:
   - apiVersion: v2
     appVersion: "10.1"
-    created: "2020-11-05T12:57:49.376978-08:00"
+    created: "2020-11-06T08:41:28.916799-08:00"
+    dependencies:
+    - name: pinglib
+      repository: file://../../pinglib
+      version: 0.1.1
+    description: A Sample PingFederate Engine Helm chart with clustering
+    digest: 31d5fdc01c300eacbde74d48e0ee37f553bec09a16b929abd499f33072eb34bf
+    home: https://devops.pingidentity.com/
+    name: pingfederate-engine
+    sources:
+    - https://github.com/pingidentity/pingidentity-getting-started
+    - https://github.com/pingidentity/pingidentity-docker-builds
+    - https://github.com/pingidentity/pingidentity-server-profiles
+    type: application
+    urls:
+    - devops/pingfederate-engine-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: "10.1"
+    created: "2020-11-06T08:41:28.914147-08:00"
     dependencies:
     - name: pingdevops
       repository: file://../../pingdevops
       version: 0.1.0
     description: A Sample PingFederate Engine Helm chart with clustering
-    digest: 3c1d9ad66fc070e8b196db11143533f4ec7cd28c479aa86aea9e6a98a7fce665
+    digest: 84cdc4324162e59014082617ad89f78398eae615ea3a4b79486021226fc76b76
     home: https://devops.pingidentity.com/
     name: pingfederate-engine
     sources:
@@ -455,32 +458,4 @@ entries:
     urls:
     - devops/pingfederate-engine-0.1.0.tgz
     version: 0.1.0
-  simplestack:
-  - apiVersion: v2
-    appVersion: "1.0"
-    created: "2020-11-05T12:57:49.308586-08:00"
-    dependencies:
-    - name: pingdirectory
-      repository: file://../../devops/pingdirectory
-      version: 0.1.0
-    - name: pingfederate-admin
-      repository: file://../../devops/pingfederate-admin
-      version: 0.1.0
-    - name: pingfederate-engine
-      repository: file://../../devops/pingfederate-engine
-      version: 0.1.0
-    - name: pingaccess
-      repository: file://../../devops/pingaccess
-      version: 0.1.0
-    - name: pingdataconsole
-      repository: file://../../devops/pingdataconsole
-      version: 0.1.0
-    description: A Helm chart to deploy PingFederate, PingDirectory
-    digest: d337769351fb176453cf762475cbbe470a25f4ee9beba0ddb1131875dfdd0481
-    home: https://devops.pingidentity.com/
-    name: simplestack
-    type: application
-    urls:
-    - demos/simplestack-0.1.0.tgz
-    version: 0.1.0
-generated: "2020-11-05T12:57:49.299271-08:00"
+generated: "2020-11-06T08:41:28.749322-08:00"
