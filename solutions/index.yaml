@@ -3,7 +3,21 @@ entries:
   customer360:
   - apiVersion: v2
     appVersion: 2.1.2
-    created: "2020-11-05T13:08:04.829544-08:00"
+    created: "2020-11-06T09:26:42.214966-08:00"
+    dependencies:
+    - name: devops
+      repository: https://helm.pingidentity.com/devops
+      version: ~0.1.0
+    description: A Helm chart to deploy Ping Customer360 into a Kubernetes cluster
+    digest: 19a67efa136d30840816843c4a2eadca2a44484dd95f801f6eaac6ff9c209ee6
+    name: customer360
+    type: application
+    urls:
+    - customer360-0.3.0-beta2.tgz
+    version: 0.3.0-beta2
+  - apiVersion: v2
+    appVersion: 2.1.2
+    created: "2020-11-06T09:26:42.192413-08:00"
     dependencies:
     - name: devops
       repository: https://helm.pingidentity.com/devops
@@ -17,33 +31,7 @@ entries:
     version: 0.3.0-beta
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2020-11-05T13:08:04.812968-08:00"
-    dependencies:
-    - name: pingdirectory
-      repository: https://helm.pingidentity.com/devops
-      version: ~0.1.0
-    - name: pingdatasync
-      repository: https://helm.pingidentity.com/devops
-      version: ~0.1.0
-    - name: pingfederate-admin
-      repository: https://helm.pingidentity.com/devops
-      version: ~0.1.0
-    - name: pingfederate-engine
-      repository: https://helm.pingidentity.com/devops
-      version: ~0.1.0
-    - name: pingdataconsole
-      repository: https://helm.pingidentity.com/devops
-      version: ~0.1.0
-    description: A Helm chart to deploy Ping Customer360 into a Kubernetes cluster
-    digest: da17398bd445dc790fc3d232f794f44932d407fff75d6f551a446555216098c4
-    name: customer360
-    type: application
-    urls:
-    - customer360-0.3.0-alpha.tgz
-    version: 0.3.0-alpha
-  - apiVersion: v2
-    appVersion: 2.1.0
-    created: "2020-11-05T13:08:04.804862-08:00"
+    created: "2020-11-06T09:26:42.169831-08:00"
     dependencies:
     - name: pingdirectory
       repository: https://helm.pingidentity.com/devops
@@ -70,149 +58,4 @@ entries:
     urls:
     - customer360-0.2.7.tgz
     version: 0.2.7
-  - apiVersion: v2
-    appVersion: 2.1.0
-    created: "2020-11-05T13:08:04.800003-08:00"
-    dependencies:
-    - name: pingdirectory
-      repository: '@pingidentity-solutions'
-      version: ~0.0.5
-    - name: pingdatasync
-      repository: '@pingidentity-solutions'
-      version: ~0.0.1
-    - name: pingfederate
-      repository: '@pingidentity-solutions'
-      version: ~0.0.1
-    - name: pingaccess
-      repository: '@pingidentity-solutions'
-      version: ~0.0.5
-    - name: pingcentral
-      repository: '@pingidentity-solutions'
-      version: ~0.0.7
-    - name: pingdataconsole
-      repository: '@pingidentity-solutions'
-      version: ~0.1.0
-    description: A Helm chart to deploy Ping Customer360 into a Kubernetes cluster
-    digest: dca62374119a71b07f955ea8e7d8e59f3810e1e2279008f8c89a60e331c0f14b
-    name: customer360
-    type: application
-    urls:
-    - customer360-0.2.6.tgz
-    version: 0.2.6
-  - apiVersion: v2
-    appVersion: 2.1.0
-    created: "2020-11-05T13:08:04.796276-08:00"
-    dependencies:
-    - name: pingdirectory
-      repository: '@pingidentity-solutions'
-      version: ~0.0.5
-    - name: pingdatasync
-      repository: '@pingidentity-solutions'
-      version: ~0.0.1
-    - name: pingfederate
-      repository: '@pingidentity-solutions'
-      version: ~0.0.1
-    - name: pingaccess
-      repository: '@pingidentity-solutions'
-      version: ~0.0.5
-    - name: pingcentral
-      repository: '@pingidentity-solutions'
-      version: ~0.0.7
-    - name: pingdataconsole
-      repository: '@pingidentity-solutions'
-      version: ~0.1.0
-    description: A Helm chart to deploy Ping Customer360 into a Kubernetes cluster
-    digest: 1a75be04630a7cf465e079740be41fb4e71dcc0f8ef4ead7adc1ad7aca2cb2ba
-    name: customer360
-    type: application
-    urls:
-    - customer360-0.2.5.tgz
-    version: 0.2.5
-  - apiVersion: v2
-    appVersion: 2.1.0
-    created: "2020-11-05T13:08:04.79235-08:00"
-    dependencies:
-    - name: pingdirectory
-      repository: '@pingidentity-solutions'
-      version: ~0.0.5
-    - name: pingdatasync
-      repository: '@pingidentity-solutions'
-      version: ~0.0.1
-    - name: pingfederate
-      repository: '@pingidentity-solutions'
-      version: ~0.0.1
-    - name: pingaccess
-      repository: '@pingidentity-solutions'
-      version: ~0.0.5
-    - name: pingcentral
-      repository: '@pingidentity-solutions'
-      version: ~0.0.7
-    - name: pingdataconsole
-      repository: '@pingidentity-solutions'
-      version: ~0.1.0
-    description: A Helm chart to deploy Ping Customer360 into a Kubernetes cluster
-    digest: b8f7e9cb5c5ce92ff43709b45cdf4f778482426a951bdeff471ef9b5da51f187
-    name: customer360
-    type: application
-    urls:
-    - customer360-0.2.4.tgz
-    version: 0.2.4
-  - apiVersion: v2
-    appVersion: 2.1.0
-    created: "2020-11-05T13:08:04.78645-08:00"
-    dependencies:
-    - name: pingdirectory
-      repository: '@pingidentity-solutions'
-      version: ~0.0.5
-    - name: pingdatasync
-      repository: '@pingidentity-solutions'
-      version: ~0.0.1
-    - name: pingfederate
-      repository: '@pingidentity-solutions'
-      version: ~0.0.1
-    - name: pingaccess
-      repository: '@pingidentity-solutions'
-      version: ~0.0.5
-    - name: pingcentral
-      repository: '@pingidentity-solutions'
-      version: ~0.0.7
-    - name: pingdataconsole
-      repository: '@pingidentity-solutions'
-      version: ~0.1.0
-    description: A Helm chart to deploy Ping Customer360 into a Kubernetes cluster
-    digest: 6d3bc0a46a7688e658dfc1025f5b2060cd86e4ff76147bd212fbe52b77d45611
-    name: customer360
-    type: application
-    urls:
-    - customer360-0.2.3.tgz
-    version: 0.2.3
-  - apiVersion: v2
-    appVersion: 2.1.0
-    created: "2020-11-05T13:08:04.781922-08:00"
-    dependencies:
-    - name: pingdirectory
-      repository: '@pingidentity-solutions'
-      version: ~0.0.5
-    - name: pingdatasync
-      repository: '@pingidentity-solutions'
-      version: ~0.0.1
-    - name: pingfederate
-      repository: '@pingidentity-solutions'
-      version: ~0.0.1
-    - name: pingaccess
-      repository: '@pingidentity-solutions'
-      version: ~0.0.5
-    - name: pingcentral
-      repository: '@pingidentity-solutions'
-      version: ~0.0.7
-    - name: pingdataconsole
-      repository: '@pingidentity-solutions'
-      version: ~0.1.0
-    description: A Helm chart to deploy Ping Customer360 into a Kubernetes cluster
-    digest: 91f3a9acee913a99d7c90fc68e5647694064fa600ccf51279122667533bee092
-    name: customer360
-    type: application
-    urls:
-    - customer360-0.2.2.tgz
-    version: 0.2.2
-generated: "2020-11-05T13:08:04.777653-08:00"
+generated: "2020-11-06T09:26:42.163861-08:00"
