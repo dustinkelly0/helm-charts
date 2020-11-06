@@ -30,3 +30,28 @@ helm search repo pingidentity
 helm repo remove pingidentity
 helm repo list
 ```
+
+## Config/Value .yamls
+
+### Standalone Demos configs
+
+| Config | Description |
+|--|--|
+| [pingfederate.yaml](configs/pingfederate.yaml) | PingFederate Admin/Engine
+| [pingdirectory.yaml](configs/pingdirectory.yaml) | Replicated Directory
+| [pingaccess.yaml](configs/pingaccess.yaml) | PingAccess Server
+
+### Use Case configs
+
+| Config | Description |
+|--|--|
+| fullstack.yaml | TBD
+
+## Deployment Examples
+
+### PingFederate Admin/Engine
+
+```shell
+helm install pf pingidentity/devops \
+     -f https://helm.pingidentity.com/configs/pingfederate.yaml
+```
