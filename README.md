@@ -1,6 +1,4 @@
-# Ping Identity Helm Chart Repositories
-
-This site provides Ping Identity Helm Chart Repositories
+#
 
 These helm repositories are intended to be a good starting point and can be used and altered as required.
 
