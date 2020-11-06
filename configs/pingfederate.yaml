@@ -1,0 +1,37 @@
+
+global:
+  ############################################################
+  #  addReleaseNameToResource: Provides global ability to add
+  #                            names to kubernetes resources
+  #      <not-set or any val>: No use of Release.Name ** DEFAULT **
+  #                    append: Appends the Release.Name
+  #                   prepend: Prepends the Release.Name
+  ############################################################
+  addReleaseNameToResource: prepend
+
+  ############################################################
+  # Ingress
+  #
+  #          ingress.enabled: {true | false}
+  # ingress.addReleaseToHost: {prepend | append | subdomain | none}
+  #    ingress.defaultDomain: Replaces with "_defaultDomain_" in host fields
+  # ingress.defaultTlsSecret: Replaces with "_defaultTlsSecret_" in tls.secretName
+  ############################################################
+  #ingress:
+    #addReleaseNameToHost: subdomain
+    #enabled: true
+    #defaultDomain: "ping-devops.com"
+
+############################################################
+# PingFederate Admin
+#
+############################################################
+pingfederate-admin:
+  chartEnabled: true
+
+############################################################
+# PingFederate Engine
+#
+############################################################
+pingfederate-engine:
+  chartEnabled: true
