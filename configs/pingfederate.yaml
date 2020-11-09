@@ -1,3 +1,9 @@
+############################################################
+# Ping Identity
+#
+# Link on deploying with helm:
+#   https://pingidentity-devops.gitbook.io/devops/deploy/deployk8s/deployhelm
+############################################################
 
 global:
   ############################################################
@@ -18,20 +24,28 @@ global:
   # ingress.defaultTlsSecret: Replaces with "_defaultTlsSecret_" in tls.secretName
   ############################################################
   #ingress:
-    #addReleaseNameToHost: subdomain
     #enabled: true
+    #addReleaseNameToHost: subdomain
     #defaultDomain: "ping-devops.com"
 
 ############################################################
-# PingFederate Admin
+# Ping DevOps Service Customizations
 #
+# This provides:
+#  - PingFederate Administrative Console with native authentication
+#  - PingFederate Engines clustered with console
+#
+# For more environment variables see:
+#   https://pingidentity-devops.gitbook.io/devops/dockerimagesref
 ############################################################
 pingfederate-admin:
   chartEnabled: true
+  envs:
+    SERVER_PROFILE_URL: https://github.com/pingidentity/pingidentity-server-profiles.git
+    SERVER_PROFILE_PATH: getting-started/pingfederate
 
-############################################################
-# PingFederate Engine
-#
-############################################################
 pingfederate-engine:
   chartEnabled: true
+  envs:
+    SERVER_PROFILE_URL: https://github.com/pingidentity/pingidentity-server-profiles.git
+    SERVER_PROFILE_PATH: getting-started/pingfederate
