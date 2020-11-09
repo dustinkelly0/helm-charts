@@ -1,0 +1,45 @@
+############################################################
+# Ping Identity
+#
+# Link on deploying with helm:
+#   https://pingidentity-devops.gitbook.io/devops/deploy/deployk8s/deployhelm
+############################################################
+
+global:
+  ############################################################
+  #  addReleaseNameToResource: Provides global ability to add
+  #                            names to kubernetes resources
+  #      <not-set or any val>: No use of Release.Name ** DEFAULT **
+  #                    append: Appends the Release.Name
+  #                   prepend: Prepends the Release.Name
+  ############################################################
+  addReleaseNameToResource: prepend
+
+  ############################################################
+  # Ingress
+  #
+  #          ingress.enabled: {true | false}
+  # ingress.addReleaseToHost: {prepend | append | subdomain | none}
+  #    ingress.defaultDomain: Replaces with "_defaultDomain_" in host fields
+  # ingress.defaultTlsSecret: Replaces with "_defaultTlsSecret_" in tls.secretName
+  ############################################################
+  #ingress:
+  #  enabled: true
+  #  addReleaseNameToHost: subdomain
+  #  defaultDomain: "example.com"
+
+############################################################
+# Ping DevOps Service Customizations
+#
+# This provides:
+#  - Replicated Ping Directory (w/ persistent PVCs)
+#  - PingDataConsole to manage PingDirectory
+#
+# For more environment variables see:
+#   https://pingidentity-devops.gitbook.io/devops/dockerimagesref
+############################################################
+pingdirectory:
+  chartEnabled: true
+
+pingdataconsole:
+  chartEnabled: true
