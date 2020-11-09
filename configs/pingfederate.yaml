@@ -24,9 +24,9 @@ global:
   # ingress.defaultTlsSecret: Replaces with "_defaultTlsSecret_" in tls.secretName
   ############################################################
   #ingress:
-    #enabled: true
-    #addReleaseNameToHost: subdomain
-    #defaultDomain: "ping-devops.com"
+  #  enabled: true
+  #  addReleaseNameToHost: subdomain
+  #  defaultDomain: "example.com"
 
 ############################################################
 # Ping DevOps Service Customizations
