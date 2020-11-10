@@ -34,6 +34,7 @@ global:
 # This provides:
 #  - Replicated Ping Directory (w/ persistent PVCs)
 #  - PingDataConsole to manage PingDirectory
+#  - LDAP SDK Tools container for ldap tools (i.e. ldapsearch/searchrate)
 #
 # For more environment variables see:
 #   https://pingidentity-devops.gitbook.io/devops/dockerimagesref
@@ -42,4 +43,7 @@ pingdirectory:
   chartEnabled: true
 
 pingdataconsole:
+  chartEnabled: true
+
+ldap-sdk-tools:
   chartEnabled: true
