@@ -35,15 +35,13 @@ helm repo list
 
 | Config | Description |
 |--|--|
-| [pingfederate.yaml](configs/pingfederate.yaml) | PingFederate Admin/Engine
-| [pingdirectory.yaml](configs/pingdirectory.yaml) | Replicated Directory
-| [pingaccess.yaml](configs/pingaccess.yaml) | PingAccess Server
+|  | TBD
 
 ### Use Case configs
 
 | Config | Description |
 |--|--|
-| fullstack.yaml | TBD
+|  | TBD
 
 ## Deployment Examples
 
@@ -51,5 +49,5 @@ helm repo list
 
 ```shell
 helm install pf pingidentity/devops \
-     -f https://helm.pingidentity.com/configs/pingfederate.yaml
+     -f https://helm.pingidentity.com/configs/TBD.yaml
 ```
