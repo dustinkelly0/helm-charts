@@ -1,0 +1,28 @@
+############################################################
+# Ping Identity
+#
+# Link on deploying with helm:
+#   https://pingidentity-devops.gitbook.io/devops/deploy/deployk8s/deployhelm
+############################################################
+
+############################################################
+# Global values
+#
+# These represent the default values.  They can all be
+# overriden by any product, in which the product settings
+# will take precedence, except in the case of removing the
+# value.
+#
+# If you only want to turn on some products, you would simply
+# change the 'global.enabled=false' and then set that same
+# value to true for the product, i.e. 'pingdirectory.enabled=true'
+############################################################
+global:
+  enabled: true  # if true, enables all images
+  image:
+    tag: "edge"
+  addReleaseNameToResource: prepend
+  ingress:
+    enabled: true
+    addReleaseNameToHost: prepend
+    defaultDomain: "ping-devops.com"
