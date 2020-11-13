@@ -3,9 +3,9 @@ entries:
   devops:
   - apiVersion: v2
     appVersion: "2.0"
-    created: "2020-11-13T10:16:28.041487-06:00"
+    created: "2020-11-13T12:27:08.116642-06:00"
     description: All Ping Identity product images with integration
-    digest: bd510a842d5b9a8ca619b4649f0b7806f16c9ab674e219aa588f17d89a1401b2
+    digest: c5762ca8a9c9063780b107eaf5371e9a2c576867f7cd4226da59ca3ded751ba3
     home: https://devops.pingidentity.com/
     name: devops
     type: application
@@ -14,7 +14,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: "1.1"
-    created: "2020-11-13T10:16:28.036793-06:00"
+    created: "2020-11-13T12:27:08.113196-06:00"
     dependencies:
     - name: pingaccess
       repository: file://../pingaccess
@@ -48,4 +48,4 @@ entries:
     urls:
     - https://helm.pingidentity.com/devops/devops-0.1.1.tgz
     version: 0.1.1
-generated: "2020-11-13T10:16:28.023967-06:00"
+generated: "2020-11-13T12:27:08.099758-06:00"
