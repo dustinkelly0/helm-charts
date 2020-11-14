@@ -1,4 +1,6 @@
 title: Ping Identity Helm Chart Repositories
 show_downloads: false
+github:
+  repository_url: http://devops.pingidentity.com
 
 theme: jekyll-theme-slate
