@@ -1,0 +1,52 @@
+############################################################
+# Ping Identity
+#
+############################################################
+
+
+global:
+  image:
+    tag: "edge"  # Uses images with the "edge" tag
+
+pingaccess:
+  enabled: true
+  # There are known issues with certificates when release names affect the hostname.
+  # We hope to resolve those soon.  For now, the default getting-started server profile
+  # is used.
+  #
+  # envs:
+  #   SERVER_PROFILE_URL: https://github.com/pingidentity/pingidentity-server-profiles.git
+  #   SERVER_PROFILE_PATH: baseline/pingaccess
+
+pingdataconsole:
+  enabled: true
+
+pingdatagovernance:
+  enabled: true
+
+pingdatasync:
+  enabled: true
+
+pingdelegator:
+  enabled: true
+
+pingdirectory:
+  enabled: true
+
+pingfederate-admin:
+  enabled: true
+  envs:
+    SERVER_PROFILE_URL: https://github.com/pingidentity/pingidentity-server-profiles.git
+    SERVER_PROFILE_PATH: baseline/pingfederate
+
+pingfederate-engine:
+  enabled: true
+  envs:
+    SERVER_PROFILE_URL: https://github.com/pingidentity/pingidentity-server-profiles.git
+    SERVER_PROFILE_PATH: baseline/pingfederate
+
+ldap-sdk-tools:
+  enabled: false
+
+pd-replication-timing:
+  enabled: false
